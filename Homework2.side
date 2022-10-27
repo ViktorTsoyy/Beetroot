@@ -1,0 +1,191 @@
+{
+  "id": "00215b8a-2ae6-4fe9-b7af-8656dcc6c3d6",
+  "version": "2.0",
+  "name": "Homework",
+  "url": "https://comfy.ua/ua/",
+  "tests": [{
+    "id": "006334d9-9e8f-4537-9b02-34e9879161b3",
+    "name": "Untitled",
+    "commands": [{
+      "id": "04094b76-3c54-43b6-b163-4df31fd169bd",
+      "comment": "",
+      "command": "open",
+      "target": "https://comfy.ua/ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9cef079a-1d72-4a5b-ad7e-94a519f576c2",
+      "comment": "",
+      "command": "click",
+      "target": "//*[@id=\"q-app\"]/div/div[4]/div/div/div[2]/form/input",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "46f90a8e-63f2-4bab-a6b7-43e4bb04c3c7",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.header-search-form__input", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//div[@id='q-app']/div/div[4]/div/div/div[2]/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "iPhone"
+    }, {
+      "id": "0fc4eed2-6df7-4ecd-aa61-dc736c103fbc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.searcher-list-item__link > span",
+      "targets": [
+        ["css=.searcher-list-item__link > span", "css:finder"],
+        ["xpath=//div[@id='q-app']/div/div[4]/div/div/div[2]/div/div/div/div/ul/li/a/span", "xpath:idRelative"],
+        ["xpath=//li/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Смартфони')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6c649fd4-a51c-4042-a7f6-ae65e5c08714",
+      "comment": "",
+      "command": "click",
+      "target": "css=.availability-filter__radio:nth-child(1)",
+      "targets": [
+        ["css=.availability-filter__radio:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='warehouse']/div/div/div/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://comfy.ua/ua/smartfon/warehouse__2/')]", "xpath:href"],
+        ["xpath=//div[2]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6c06ff83-6855-4def-a73f-c486147f35b7",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.q-btn--actionable",
+      "targets": [
+        ["css=.q-btn--actionable", "css:finder"],
+        ["xpath=//div[@id='q-app']/div/div[6]/div/a", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div[6]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c92ec353-361e-4d2f-a856-99397093a0d2",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=Смартфони та телефони",
+      "targets": [
+        ["linkText=Смартфони та телефони", "linkText"],
+        ["css=.breadcrumbs__item:nth-child(2)", "css:finder"],
+        ["xpath=(//a[contains(text(),'Смартфони та телефони')])[2]", "xpath:link"],
+        ["xpath=//div[@id='q-app']/div/main/div/div/nav/a[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://comfy.ua/ua/telephone-smartfon/')])[7]", "xpath:href"],
+        ["xpath=//main/div/div/nav/a[2]", "xpath:position"]
+      ],
+      "value": "Смартфони та телефони"
+    }]
+  }, {
+    "id": "1fba9e34-3e52-4bcf-abd8-17e18358d19f",
+    "name": "Tests2",
+    "commands": [{
+      "id": "217f35ba-e385-4cee-a064-f8176c9b5ed9",
+      "comment": "",
+      "command": "open",
+      "target": "https://comfy.ua/ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a211c6b9-9136-47db-a5cd-96a200be99ca",
+      "comment": "",
+      "command": "click",
+      "target": "//*[@id=\"q-app\"]/div/div[4]/div/div/div[3]/div[1]/a/span",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6f05bc7e-ca32-448a-a294-75fe266403e2",
+      "comment": "",
+      "command": "click",
+      "target": "id=google-signin-button",
+      "targets": [
+        ["id=google-signin-button", "id"],
+        ["css=#google-signin-button", "css:finder"],
+        ["xpath=//button[@id='google-signin-button']", "xpath:attributes"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Google')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "471e21bc-63ea-495c-a947-1a11837c97d9",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "//*[@id=\"google-signin-button\"]/div[2]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1f0036cb-d6e1-4f96-b001-afd78e82911e",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.facebook-button > .social-button__text",
+      "targets": [
+        ["css=.facebook-button > .social-button__text", "css:finder"],
+        ["xpath=//button[3]/div[2]", "xpath:position"]
+      ],
+      "value": "Facebook"
+    }]
+  }, {
+    "id": "143f0024-c84b-4552-873a-22ed0c7265bd",
+    "name": "Testcases2",
+    "commands": [{
+      "id": "014c4284-fdc9-41a3-98a4-39c31d8bda84",
+      "comment": "",
+      "command": "open",
+      "target": "https://comfy.ua/ua/gadzhety/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ada6639e-47f2-4041-bb0a-6e8f0bf9b287",
+      "comment": "",
+      "command": "click",
+      "target": "css=.portal-tile__item:nth-child(8) .portal-tile__img",
+      "targets": [
+        ["css=.portal-tile__item:nth-child(8) .portal-tile__img", "css:finder"],
+        ["xpath=//img[@alt='Фітнес-браслети']", "xpath:img"],
+        ["xpath=//div[@id='category']/div/ul/li[8]/a/div[2]/img", "xpath:idRelative"],
+        ["xpath=//li[8]/a/div[2]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "00577870-4e34-4c1e-b63e-9a2bbe87dcac",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=#label_actions .general-filter__item:nth-child(1)",
+      "targets": [
+        ["css=#label_actions .general-filter__item:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='label_actions']/div/div/div/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://comfy.ua/ua/fitness-bracelets/label_actions__9/')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div/div[2]/div/a", "xpath:position"]
+      ],
+      "value": "Знижка"
+    }, {
+      "id": "6d238777-7445-4f56-aaa8-db26ba27ef62",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.header-bottom-cart__cart-default",
+      "targets": [
+        ["css=.header-bottom-cart__cart-default", "css:finder"],
+        ["xpath=//div[@id='q-app']/div/div[4]/div/div/div[3]/div[7]/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[7]/div/div[2]", "xpath:position"]
+      ],
+      "value": "Кошик"
+    }]
+  }],
+  "suites": [{
+    "id": "2294afcd-40e8-4c67-b67b-907f514dcbd1",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["006334d9-9e8f-4537-9b02-34e9879161b3"]
+  }],
+  "urls": ["https://comfy.ua/ua/"],
+  "plugins": []
+}
